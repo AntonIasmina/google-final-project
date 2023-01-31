@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="358.0" prefWidth="525.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab.controller.FriendController">
+   <children>
+      <BorderPane layoutX="-1.0" prefHeight="399.0" prefWidth="525.0">
+         <top>
+            <AnchorPane BorderPane.alignment="CENTER">
+               <children>
+                  <TableView id="friendTable" fx:id="friendTable" prefHeight="319.0" prefWidth="526.0">
+                    <columns>
+                      <TableColumn id="fcolumn1" fx:id="fcolumn1" prefWidth="270.39999693632126" text="First Name" />
+                      <TableColumn id="fcolumn2" fx:id="fcolumn2" minWidth="0.0" prefWidth="254.3999786376953" text="Last Name" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <ButtonBar prefHeight="79.0" prefWidth="491.0" BorderPane.alignment="CENTER">
+               <buttons>
+                  <Button mnemonicParsing="false" onAction="#handleAddFriend" prefHeight="26.0" text="Add friends" />
+                  <Button mnemonicParsing="false" onAction="#handleDeleteFriend" prefHeight="26.0" prefWidth="354.0" text="Delete friend" />
+               </buttons>
+            </ButtonBar>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

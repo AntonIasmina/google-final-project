@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab.controller.AddFriendController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <bottom>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <buttons>
+                <Button mnemonicParsing="false" onAction="#handleAdding" prefHeight="26.0" prefWidth="165.0" text="Send friend request" />
+              </buttons>
+            </ButtonBar>
+         </bottom>
+         <top>
+            <AnchorPane BorderPane.alignment="CENTER">
+               <children>
+                  <TableView id="addTable" fx:id="addTable" prefHeight="322.0" prefWidth="600.0">
+                    <columns>
+                      <TableColumn id="acolumn1" fx:id="acolumn1" prefWidth="294.19999998807907" text="First Name" />
+                      <TableColumn id="acolumn2" fx:id="acolumn2" prefWidth="305.0" text="Last Name" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

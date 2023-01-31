@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab.controller.RequestController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <top>
+            <TableView id="requestTable" fx:id="requestTable" prefHeight="320.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn id="rcolumn1" fx:id="rcolumn1" prefWidth="217.0" text="First Name" />
+                <TableColumn id="rcolumn2" fx:id="rcolumn2" prefWidth="205.0" text="Last Name" />
+                  <TableColumn id="rcolumn3" fx:id="rcolumn3" prefWidth="177.0" text="Date" />
+              </columns>
+            </TableView>
+         </top>
+         <bottom>
+            <ButtonBar prefHeight="71.0" prefWidth="430.0" BorderPane.alignment="CENTER">
+               <buttons>
+                  <Button mnemonicParsing="false" onAction="#handleAccept" prefHeight="44.0" prefWidth="168.0" text="Accept request" />
+               </buttons>
+            </ButtonBar>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
